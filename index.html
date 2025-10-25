@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Zone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz Zone</h1>
+    <p>اختبر نفسك في مواد تربية نوعية - قسم تكنولوجيا 🎯</p>
+  </header>
+
+  <main>
+    <section class="subjects">
+      <div class="subject-card">تكنولوجيا التعليم</div>
+      <div class="subject-card">مدخل تربوي</div>
+      <div class="subject-card">إنتاج تعليمي</div>
+      <div class="subject-card">حاسب آلي</div>
+      <div class="subject-card">وسائل تعليمية</div>
+      <div class="subject-card">تاريخ التربية</div>
+      <div class="subject-card">علم نفس</div>
+      <div class="subject-card">لغة إنجليزية</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Quiz Zone | Designed for T. Education Students</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.subject-card').forEach(card => {
+      card.addEventListener('click', () => {
+        alert(`سيتم قريبًا إضافة امتحانات مادة: ${card.textContent} 📚`);
+      });
+    });
+  </script>
+</body>
+</html>
